@@ -1,25 +1,25 @@
 class Senn < Formula
   desc "Git-native infrastructure for single operators, built on Nix and OpenTofu."
-  homepage "https://github.com/mrbandler/senn"
-  version "0.2.0"
+  homepage "https://mrbandler.github.io/senn/"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/mrbandler/senn/releases/download/v0.2.0/senn-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "c5527bdb0f7d84e0aab92064ee0cabbc5e841ca49b15de51f09bbca615ba868f"
+      url "https://github.com/mrbandler/senn/releases/download/v0.3.0/senn-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "9b464a6940fda3ba20273dd95e59e8a2a83d1ed87c34d06b3a70e431d5d40247"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mrbandler/senn/releases/download/v0.2.0/senn-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "bf4e4e9a851451409612fc5bd874c96414150df57a2f7264b390fde4cebc3c9f"
+      url "https://github.com/mrbandler/senn/releases/download/v0.3.0/senn-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "fe3b36ff5186f89aae4574a810665670d2b7d72d85324a2903a16178037e280c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/mrbandler/senn/releases/download/v0.2.0/senn-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1969ef549d141dcb3fada276c573a2112f9e5cbe2613885d381a26e46eb6d08f"
+      url "https://github.com/mrbandler/senn/releases/download/v0.3.0/senn-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9bc9dda246a3ed6ebf23b97130963f5ab97ffb2e1138f061cc02736a5a917cfb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mrbandler/senn/releases/download/v0.2.0/senn-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4c55cec33b4f32ca710b13b07d3c5c5fba7fe4477fa7a36f01a3378f0be99138"
+      url "https://github.com/mrbandler/senn/releases/download/v0.3.0/senn-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f4e76185d70e5e6802d91be45838fbd6b5fca9cad6de47dd4a89b31b622f9020"
     end
   end
   license "MIT"
